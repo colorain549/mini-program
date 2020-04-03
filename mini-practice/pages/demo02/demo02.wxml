@@ -1,0 +1,46 @@
+<view>--------- 数据类型 ---------</view>
+<view>字符串: {{msg}}</view>
+<view>数字: {{num}}</view>
+<view>布尔值: {{bool}}</view>
+<!-- 在标签中使用 -->
+<view>--------- 自定义属性 ---------</view>
+<view data-msg="{{msg}}">在标签中使用1</view>
+<view data-num="{{num}}">在标签中使用2</view>
+<view data-bool="{{bool}}">在标签中使用3</view>
+<!-- 使用布尔类型变量充当属性 -->
+<view>--- 使用布尔类型变量充当属性 ---</view>
+<view>
+    <checkbox checked="{{isChecked}}">isChecked</checkbox>
+</view>
+<!-- 运算 -->
+<view>--------- 运算 ---------</view>
+<view>算数: 1+1=>{{1+1}}</view>
+<view>字符串: '1'+'1'=>{{'1'+'1'}}</view>
+<view>三目: 12%2==0?'true':'false'=>{{12%2==0?'true':'false'}}</view>
+<!-- 对象 -->
+<view>--------- 通过.访问 ---------</view>
+<view>属性apple的值:  {{object.apple}}</view>
+<view>属性banana的值:  {{object.banana}}</view>
+<view>--------- 对象循环 ---------</view>
+<view wx:for="{{object}}" wx:for-index="idx" wx:for-item="itemName" wx:key="id">
+  属性: {{idx}}
+  --
+  值: {{itemName}}
+</view>
+<!-- 数组 -->
+<view>--------- 数组循环 ---------</view>
+<view>
+  <view wx:for="{{list}}" wx:key="id">
+    索引: {{index}}
+    --
+    值: {{item.name}}
+  </view>
+</view>
+<view>--------- 数组循环 ---------</view>
+<view>
+  <view wx:for="{{list}}" wx:for-item="item" wx:for-index="index" wx:key="id">
+    索引: {{index}}
+    --
+    值: {{item.name}}
+  </view>
+</view>

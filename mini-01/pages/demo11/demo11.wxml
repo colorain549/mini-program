@@ -1,0 +1,36 @@
+<!--pages/demo11/demo11.wxml-->
+<!-- 
+  导航组件 navigator
+  0 块级元素 默认会换行 可以直接加宽高
+  1 url 要跳转的页面 绝对/相对路径
+  2 target 在哪个目标上发生跳转，默认当前小程序
+    self 当前小程序
+    miniProgram 其他小程序页面
+  3 open-type 跳转方式
+    navigator 保留当前页面，跳转到应用内的某个页面。但是不能跳到 tabbar 页面。
+    redirect 关闭当前页面，跳转到应用内的某个页面。但是不允许跳转到 tabbar 页面。
+    switchTab 跳转到 tabBar 页面，并关闭其他所有非 tabBar 页面
+    reLaunch 关闭所有页面，打开到应用内的某个页面
+    navigateBack 通常搭配 target的值miniProgram使用
+ -->
+ <navigator open-type="switchTab" url="/pages/index/index"> 主页 </navigator>
+ <navigator url="/pages/demo03/demo03"> demo03 基础语法 </navigator>
+ <navigator url="/pages/demo04/demo04"> demo04 事件绑定（bindTap） </navigator>
+ <navigator url="/pages/demo05/demo05"> demo05 rpx换算 </navigator>
+ <navigator url="/pages/demo06/demo06"> demo06 引入样式（@import） </navigator>
+ <navigator url="/pages/demo08/demo08"> demo08 文本标签（text） </navigator>
+ <navigator url="/pages/demo09/demo09"> demo09 图像标签（image） </navigator>
+ <navigator url="/pages/demo10/demo10"> demo10 轮播图页面（swiper） </navigator>
+ <navigator url="/pages/demo12/demo12"> demo12 富文本标签（rich-text） </navigator>
+ <navigator url="/pages/demo13/demo13"> demo13（button）  </navigator>
+ <navigator url="/pages/demo14/demo14"> demo14（icon） </navigator>
+ <navigator url="/pages/demo15/demo15"> demo15（radio） </navigator>
+ <navigator url="/pages/demo16/demo16"> demo16（checkbox） </navigator>
+ <navigator url="/pages/demo17/demo17"> demo17（sub） </navigator>
+ <view> ------------ 本节内容 ------------ </view>
+ <navigator url="/pages/index/index"> 无法跳转 </navigator>
+ <navigator url="/pages/demo10/demo10"> 轮播图页面（swiper） </navigator>
+ <navigator open-type="redirect" url="/pages/demo10/demo10"> redirect </navigator>
+ <navigator open-type="switchTab" url="/pages/index/index"> switchTab </navigator>
+ <navigator open-type="reLaunch" url="/pages/index/index"> reLaunch </navigator>
+ 

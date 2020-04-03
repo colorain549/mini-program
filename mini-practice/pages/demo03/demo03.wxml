@@ -1,0 +1,11 @@
+<!--pages/demo03/demo03.wxml-->
+<view>对象: apple: {{object.apple}} lb</view>
+<view>对象: banana: {{object.banana}} lb</view>
+
+<view wx:for="{{list}}" wx:id="id">
+  索引: {{index}}
+  --
+  id: {{item.id}}
+  --
+  name: {{item.name}}
+</view>

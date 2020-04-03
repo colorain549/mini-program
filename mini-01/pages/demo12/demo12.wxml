@@ -1,0 +1,8 @@
+<!--pages/demo12/demo12.wxml-->
+<!-- 
+  rich-text 富文本标签
+  1 nodes 属性实现
+    1 接受标签字符串（最常用）
+    2 接受对象数组
+ -->
+<rich-text nodes="{{html}}"></rich-text>

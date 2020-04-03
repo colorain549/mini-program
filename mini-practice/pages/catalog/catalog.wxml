@@ -1,0 +1,7 @@
+<!--pages/catalog/catalog.wxml-->
+<navigator url="../demo01/demo01"></navigator>
+<navigator url="../demo02/demo02">字符串、数字、布尔值、对象和数组</navigator>
+<navigator url="../demo03/demo03">条件渲染</navigator>
+<navigator url=""></navigator>
+<navigator url=""></navigator>
+<navigator url=""></navigator>

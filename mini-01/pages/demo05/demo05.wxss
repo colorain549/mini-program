@@ -1,0 +1,18 @@
+/* pages/demo05/demo05.wxss */
+/* 
+    1. 小程序中 不需要主动来引入样式文件
+    2. 需要把页面中的某些元素的单位 由px 改成 rpx
+    3. 375px = 750 rpx => 1px = 2rpx
+    4. 设计稿公式 1 px = 750 rpx * 100 /page
+    5. 利用属性 calc属性 css 和 wxss 都支持 一个属性
+ */
+
+ view {
+   /* 需求:100px 屏幕宽度375px */
+   /* width: 200rpx; */
+   width:calc(750rpx * 100 / 375);
+   height: 200rpx;
+   font-size: 40rpx;
+   background-color: aqua;
+   
+ }
